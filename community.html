@@ -1,0 +1,154 @@
+<DOCTYPE! html>
+<html>
+	<head>
+		<link rel="stylesheet" href="style.css">
+	</head>
+	<body>
+		<div class="topnav">
+			<img src="logo.png" style="height: 70px; float: left; margin-left: 10px;">
+			<a href="home.html">MusicKicks</a>
+			<a href="music.html">Music</a>
+			<a href="community.html" class="active">Community</a>
+			<a href="about.html">About</a> <a style="padding: 2px; font-size: 30px;"> | </a>
+			<input type="text" placeholder="Search.." class="searchbox"> 
+			<div class="dropdown">
+		    <a href="javascript:void(0)" style="float: right;">Account</a>
+				<div class="dropdown-content">
+					<a href="settings.html">Settings</a>
+					<a href="profile.html">Profile</a>
+					<a href="logout.html">Logout</a>
+				</div>
+			</div>
+		</div>
+
+		<h1>&nbsp Community</h1>
+		<div class="notif">
+		    <a href="javascript:void(0)" style="float: right; padding: 10px; margin-top: 70px; margin-right: 40px;">
+		    <img src="notif.png" style="width: 70px;"> </a>
+			<div class="notifbox">
+				No Notifications...
+			</div>
+		</div>
+		<h2 style="margin-top: 0; margin-left: 50px;"> Welcome to the MusicKicks Community! </h2>
+		<div class="community">
+			<button class="tablink" style="width: 150px;" onclick="openPage('new', this, '#030303')" id="defaultOpen">New</button>
+			<button class="tablink" style="width: 150px;" onclick="openPage('discussions', this, '#030303')">Discussions</button>
+			<button class="tablink" style="width: 150px;" onclick="openPage('reviews', this, '#030303')">Reviews</button>
+
+		<div id="new" class="tabcontent"> <!--NEW-->
+		<h2> New Posts </h2>
+			<a href="posts/post-02.html">
+			<div class="genrebox" style="box-shadow: 5px 5px #333333;">
+					<div class="album" style="margin-left: 10px;">
+						<b> <big> Welcome to the MusicKicks Community! </big> </b> <br>
+						<small>  By user: MusicKicks <br> General Discussion
+						<br> <small> <small> March 20, 2025 | 0 Comments 0 likes </small> <br> </small> </small>
+					</div>
+					<div class="tracks" style="width: 30%;">
+						Read Discussion <br> <br>
+						<img src="pin.png" style="width: 70px;">
+					</div>
+			</div>
+			</a>
+
+			<a href="posts/okcomputer.html">
+			<div class="genrebox" style="box-shadow: 5px 5px #333333;">
+				<img src="covers/computer.jpg" style="padding: 10px; height: 290px; float: left; position: absolute;">
+					<div class="album" style="margin-left: 300px;">
+						<b> <big> OK Computer </big> </b> <br>
+						<small> <small> Radiohead <br> Hip-hop </small> </small>
+						<br> Rating: 9.8 / 10 &nbsp <img src="posts/okcomputer.png" style="height: 40px; display: inline;"> <br>
+					</div>
+					<div class="tracks" style="width: 30%;">
+						Read Review
+					</div>
+			</div>
+			</a>
+		</div>
+
+
+
+		<div id="discussions" class="tabcontent"> <!--DISCUSSIONS-->
+		<h2> Discussions </h2>
+			<a href="posts/post-02.html">
+			<div class="genrebox" style="box-shadow: 5px 5px #333333;">
+					<div class="album" style="margin-left: 10px;">
+						<b> <big> Welcome to the MusicKicks Community! </big> </b> <br>
+						<small>  By user: MusicKicks <br> General Discussion
+						<br> <small> <small> March 20, 2025 | 0 Comments 0 likes </small> <br> </small> </small>
+					</div>
+					<div class="tracks" style="width: 30%;">
+						Read Discussion <br> <br>
+						<img src="pin.png" style="width: 70px;">
+					</div>
+			</div>
+			</a>
+
+		</div>
+
+		<div id="reviews" class="tabcontent"> <!--REVIEWS-->
+		<h2> Reviews </h2>
+			<a href="posts/okcomputer.html">
+			<div class="genrebox" style="box-shadow: 5px 5px #333333;">
+				<img src="covers/computer.jpg" style="padding: 10px; height: 290px; float: left; position: absolute;">
+					<div class="album" style="margin-left: 300px;">
+						<b> <big> OK Computer </big> </b> <br>
+						<small> <small> Radiohead <br> Hip-hop </small> </small>
+						<br> Rating: 9.8 / 10 &nbsp <img src="posts/okcomputer.png" style="height: 40px; display: inline;"> <br>
+					</div>
+					<div class="tracks" style="width: 30%;">
+						Read Review
+					</div>
+			</div>
+			</a>
+
+			<a href="posts/collegedropout.html">
+			<div class="genrebox" style="box-shadow: 5px 5px #333333;">
+				<img src="covers/college.jpg" style="padding: 10px; height: 290px; float: left; position: absolute;">
+					<div class="album" style="margin-left: 300px;">
+						<b> <big> The College Dropout </big> </b> <br>
+						<small> <small> Kanye West <br> Pop rap, Conscious hip hop, </small> </small>
+						<br> Rating: 9.2 / 10 &nbsp <img src="posts/collegedropout.png" style="height: 40px; display: inline;"> <br>
+					</div>
+					<div class="tracks" style="width: 30%;">
+						Read Review
+					</div>
+			</div>
+			</a>
+
+			<a href="posts/collegedropout.html">
+			<div class="genrebox" style="box-shadow: 5px 5px #333333;">
+				<img src="covers/damn.jpg" style="padding: 10px; height: 290px; float: left; position: absolute;">
+					<div class="album" style="margin-left: 300px;">
+						<b> <big> DAMN. </big> </b> <br>
+						<small> <small> Kendrick Lamar <br> Hip-hop, Conscious Hip-hop </small> </small>
+						<br> Rating: 8.3 / 10 &nbsp <img src="posts/damn.png" style="height: 40px; display: inline;"> <br>
+					</div>
+					<div class="tracks" style="width: 30%;">
+						Read Review
+					</div>
+			</div>
+			</a>
+		</div>
+		</div>
+
+
+		<script>
+			function openPage(pageName,elmnt,color) {
+				var i, tabcontent, tablinks;
+				tabcontent = document.getElementsByClassName("tabcontent");
+				for (i = 0; i < tabcontent.length; i++) {
+					tabcontent[i].style.display = "none";
+				}
+				tablinks = document.getElementsByClassName("tablink");
+				for (i = 0; i < tablinks.length; i++) {
+					tablinks[i].style.backgroundColor = "";
+				}
+				document.getElementById(pageName).style.display = "block";
+				elmnt.style.backgroundColor = color;
+			}
+			document.getElementById("defaultOpen").click();
+	  </script>
+	</body>
+		
+</html>
