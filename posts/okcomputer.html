@@ -67,18 +67,36 @@
 				<br> <br>
 				The album is just a masterpiece, it breaks the mold, it makes you feel, and the soundscape is absolutely gorgeous. This album has stood the test of time and has aged gracefully. OK Computer is a must listen for every music enthusiast and I recommend this albnum to everyone.
 				</p>
+				&nbsp <p id="count" style="display: inline;"> 5 </p> Likes
+				<img src="../like.png" onclick="likeCount()" id="like" style="height: 60px; margin-top: 3px;">
+
 			</div>
-		</div>
-		<div class="footer">
-			<h3> ©2025 My Website. All rights reserved. </h3> &nbsp &nbsp
-			<img src="../twitter.png" style="height: 70px; display: inline-block; margin-right: 20px;">
-			<img src="../facebook.png" style="height: 70px; display: inline-block; margin-right: 20px;">
-			<img src="../instagram.png" style="height: 70px; display: inline-block; margin-right: 20px;"> <br> <br>
-			<a href="../home.html" style="text-decoration: none; color: #FFFFFF;">MusicKicks</a> &nbsp
-			<a href="../music.html" style="text-decoration: none; color: #FFFFFF;">Music</a> &nbsp
-			<a href="../community.html" style="text-decoration: none; color: #FFFFFF;">Community</a> &nbsp
-			<a href="../about.html" style="text-decoration: none; color: #FFFFFF;">About</a>
-		</div>
+
+			<div class="comments">
+				<h2> 0 Comments: </h2>
+				<h3> Write a Comment: </h3>
+				<div style="float: left; width: 100%;"> <textarea placeholder="I think..." class="commentbox"> </textarea> </div>
+				<div style="padding: 15px; background-color: #252525; color: white; float: left; font-size: 30px;"> Comment </div>
+			</div>
+
+			<div class="footer" style="position: relative;">
+				<h3> ©2025 My Website. All rights reserved. </h3> &nbsp &nbsp
+				<img src="../twitter.png" style="height: 70px; display: inline-block; margin-right: 20px;">
+				<img src="../facebook.png" style="height: 70px; display: inline-block; margin-right: 20px;">
+				<img src="../instagram.png" style="height: 70px; display: inline-block; margin-right: 20px;"> <br> <br>
+				<a href="../home.html" style="text-decoration: none; color: #FFFFFF;">MusicKicks</a> &nbsp
+				<a href="../music.html" style="text-decoration: none; color: #FFFFFF;">Music</a> &nbsp
+				<a href="../community.html" style="text-decoration: none; color: #FFFFFF;">Community</a> &nbsp
+				<a href="../about.html" style="text-decoration: none; color: #FFFFFF;">About</a>
+			</div>
 		</body>
+		<script>
+			function likeCount(){
+				var count = document.getElementById("count");
+				count.innerHTML = "6";
+				var like = document.getElementById("like");
+				like.src="../liked.png";
+			}
+		</script>
 		
 </html>

@@ -30,18 +30,37 @@
 			<br> Posted by: MusicKicks
 			<div class="reviewcontent">
 				<p>
-				nbsp Hello there Music Lover! We welcome you to our small MusicKicks Community! This is a simple forum where you can post reviews, post discussions and chat with other Music Lover about everything Music! Before we get started, we highly recommend you read our <a href="../rules.html"> Community Guideleines </a> and check out some of our team and the community's <a href="../music.html"> favorite Music </a>. We Hope you enjoy your time here with us!
+				nbsp Hello there Music Lover! We welcome you to our small MusicKicks Community! This is a simple forum where you can post reviews, post discussions and chat with other Music Lover about everything Music! Before we get started, we highly recommend you read our <a href="../rules.html"> Community Guidelines </a> and check out some of our team and the community's <a href="../music.html"> favorite Music </a>. We Hope you enjoy your time here with us!
+		</div>
+
+			&nbsp <p id="count" style="display: inline;"> 0 </p> Likes
+			<img src="../like.png" onclick="likeCount()" id="like" style="height: 60px; margin-top: 3px;">
+		</div> <br> <br>
+		<div class="comments">
+		<h2> 0 Comments: </h2>
+			<h3> Write a Comment: </h3>
+			<div style="float: left; width: 100%;"> <textarea placeholder="I think..." class="commentbox"> </textarea> </div>
+			<div style="padding: 15px; background-color: #252525; color: white; float: left; font-size: 30px;"> Comment </div>
+		</div>
+
+
+				<div class="footer" style="position: relative; margin-top: 50px;">
+				<h3> ©2025 My Website. All rights reserved. </h3> &nbsp &nbsp
+				<img src="../twitter.png" style="height: 70px; display: inline-block; margin-right: 20px;">
+				<img src="../facebook.png" style="height: 70px; display: inline-block; margin-right: 20px;">
+				<img src="../instagram.png" style="height: 70px; display: inline-block; margin-right: 20px;"> <br> <br>
+				<a href="../home.html" style="text-decoration: none; color: #FFFFFF;">MusicKicks</a> &nbsp
+				<a href="../music.html" style="text-decoration: none; color: #FFFFFF;">Music</a> &nbsp
+				<a href="../community.html" style="text-decoration: none; color: #FFFFFF;">Community</a> &nbsp
+				<a href="../about.html" style="text-decoration: none; color: #FFFFFF;">About</a>
 			</div>
-		</div>
-		<div class="footer">
-			<h3> ©2025 My Website. All rights reserved. </h3> &nbsp &nbsp
-			<img src="../twitter.png" style="height: 70px; display: inline-block; margin-right: 20px;">
-			<img src="../facebook.png" style="height: 70px; display: inline-block; margin-right: 20px;">
-			<img src="../instagram.png" style="height: 70px; display: inline-block; margin-right: 20px;"> <br> <br>
-			<a href="../home.html" style="text-decoration: none; color: #FFFFFF;">MusicKicks</a> &nbsp
-			<a href="../music.html" style="text-decoration: none; color: #FFFFFF;">Music</a> &nbsp
-			<a href="../community.html" style="text-decoration: none; color: #FFFFFF;">Community</a> &nbsp
-			<a href="../about.html" style="text-decoration: none; color: #FFFFFF;">About</a>
-		</div>
 		</body>
+		<script>
+			function likeCount(){
+				var count = document.getElementById("count");
+				count.innerHTML = "1";
+				var like = document.getElementById("like");
+				like.src="../liked.png";
+			}
+		</script>
 </html>
