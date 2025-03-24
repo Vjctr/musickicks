@@ -2,9 +2,11 @@
   scroll-behavior: smooth;
 }
 body {
-  background-color: #242424;
-  background-size: cover;
-  height: 100%;
+ font-family: Arial, sans-serif;
+ line-height: 1.6;
+ display: flex;
+ flex-direction: column;
+ min-height: 100vh;
 }
 .topnav {
   overflow: hidden;
