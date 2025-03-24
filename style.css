@@ -111,7 +111,7 @@ h3 {
 * {box-sizing: border-box}
 
 /* Set height of body and the document to 100% */
-body, html {
+html {
 	 font-family: Arial, sans-serif;
          line-height: 1.6;
          display: flex;
