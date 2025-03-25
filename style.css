@@ -313,8 +313,8 @@ li {
   display: table;
   color: #FFFFFF;
 }
-
-.footer {
+/* Iniba ko lng to */
+.footer orig {
   width: 100%;
   height: 200px;
   margin-top: 80px;
