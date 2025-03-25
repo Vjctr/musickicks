@@ -300,7 +300,18 @@ li {
   text-align: right;
   padding: 20px;
   float: right;
-  width: 500px;
+  width: auto;
+  background-color: #252525;
+  margin: 40px;
+}
+
+.read {
+  font-size: 30px;
+  color: #FFFFFF;
+  text-align: right;
+  padding: 20px;
+  float: right;
+  margin: 40px;
 }
 
 .community {
