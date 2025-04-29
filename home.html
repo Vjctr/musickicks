@@ -6,6 +6,7 @@
       <title>MusicKicks - Discover New Music</title>
       <!-- Font Awesome -->
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+      <link rel="stylesheet" href="style.css">
       <style>
           /* Base Styles */
           * {
@@ -153,19 +154,23 @@
   </head>
   <body>
       <!-- Navigation -->
-      <nav>
-          <div class="logo-container">
-              <!-- Replace with your actual logo image path -->
-              <img src="https://scontent.fmnl33-5.fna.fbcdn.net/v/t1.15752-9/480804400_992237478961102_6154288563429484480_n.jpg?stp=dst-jpg_s480x480_tt6&_nc_cat=102&ccb=1-7&_nc_sid=0024fc&_nc_eui2=AeFNBBgZwIKCcoktQuLXL9dcoJz-vrzQfRegnP6-vNB9F4VwNSOgNtXYJR3__K4n1S6qBvTiNFJQxzAa2hgpS2JM&_nc_ohc=-gAX14HvXn4Q7kNvgHZuScF&_nc_oc=Adnv5iXYOW7hPgY09riFNZmJZLv4Pnd5Mdcc5ja34esNuMGflubSknc7ldzcJn5njBw&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent.fmnl33-5.fna&oh=03_Q7cD1wEZZxR_lPlHNRNFD305vd0Ko_xk3OQ9nMy98HPFDHt5TA&oe=6808D5BF" alt="MusicKicks Logo" class="logo-img">
-              <div class="logo-text">MusicKicks</div>
-          </div>
-          <div class="nav-links">
-              <a href="#">Home</a>
-              <a href="#">Community</a>
-              <a href="#">Music</a>
-              <a href="#">About</a>
-          </div>
-      </nav>
+      <div class="topnav">
+			<img src="logo.png" style="height: 70px; float: left; margin-left: 10px;">
+			<a href="home.html" class="active">MusicKicks</a>
+			<a href="music.html">Music</a>
+			<a href="community.html">Community</a>
+			<a href="about.html">About</a> <a style="padding: 2px; font-size: 30px;"> | </a>
+			<input type="text" placeholder="Search.." class="searchbox">
+			<div class="dropdown">
+		    <a href="javascript:void(0)" style="float: right;">Account</a>
+				<div class="dropdown-content">
+					<a href="settings.html">Settings</a>
+					<a href="profile.html">Profile</a>
+					<a href="logout.html">Logout</a>
+				</div>
+			</div>
+		</div>
+
       
       <main>
           <section class="hero">
