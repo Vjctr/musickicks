@@ -288,7 +288,7 @@ li {
 }
 
 .reviewcontent {
-  font-size: 30px;
+  font-size: 1.8rem;
   color: #FFFFFF;
   text-align: justify;
   padding: 40px;
@@ -364,6 +364,15 @@ li {
   font-size: 25px;
   min-height: 300px;
   border: none;
+}
+
+.loginform {
+  margin: 20px;
+  color: #000000;
+}
+.logininput {
+  min-width: 120px;
+  font-size: 18px;
 }
 
 /* When the screen is less than 600px wide, stack the links and the search field vertically instead of horizontally */
