@@ -374,6 +374,39 @@ li {
   min-width: 120px;
   font-size: 18px;
 }
+.profile {
+  padding-left: 20px;
+  display: block;
+  margin-bottom: 0px;
+  width: 100%;
+  background-image: url("gradient.png");
+  background-size: 100% 100%;
+}
+.profilepic {
+  padding: 10px;
+  padding-left: 0px;
+  width: 300px;
+  border-radius: 50%;
+}
+
+.profile-buttons {
+  margin-left: 20px;
+  padding: 15px;
+  padding-left: 20px;
+  padding-right: 20px;
+  background-color: #252525;
+  color: white;
+  display: inline;
+  font-size: 20px;
+}
+
+.profilename {
+  width: 100%;
+}
+
+.profilename td{
+  width: %;
+}
 
 /* When the screen is less than 600px wide, stack the links and the search field vertically instead of horizontally */
 @media screen and (max-width: 600px) {
