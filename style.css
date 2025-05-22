@@ -169,7 +169,7 @@ li {
 }
 
 .album {
-	font-size: 54px;
+	font-size: 45px;
 	padding: 4px;
 	color: #FFFFFF;
 	float: left;
@@ -177,7 +177,7 @@ li {
 	margin-left: 170px;
 }
 .layer {
-	min-height: 160px;
+	min-height: 178px;
 	float: left;
     position: relative;
 	padding: 5px;
@@ -272,7 +272,7 @@ li {
 }
 
 .genrebox {
-	min-height: 300px;
+	min-height: 240px;
 	display: inline-block;
 	padding: 5px;
 	width: 90%;
