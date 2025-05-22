@@ -29,7 +29,7 @@ body {
 }
 
 .topnav a.active {
-  background-color: #252525;
+  background-color: #B41100;
   color: white;
 }
 
@@ -40,6 +40,19 @@ h1 {
   display: inline-block;
   margin-left: 20px;
   
+}
+
+.loginbutton {
+  padding: 15px;
+  background-color: #252525;
+  color: white;
+  font-size: 30px;
+  text-decoration: none;
+}
+
+.loginbutton:hover {
+  background-color: #ddd;
+  color: black;
 }
 
 h2 {
@@ -141,7 +154,7 @@ li.tracklist {
 }
 
 li {
-	margin: 130px 70px;
+	margin: 110px 70px;
 }
 
 .reveal{
@@ -156,19 +169,19 @@ li {
 }
 
 .album {
-	font-size: 60px;
+	font-size: 54px;
 	padding: 4px;
 	color: #FFFFFF;
 	float: left;
 	font-family: helvetica;
-	margin-left: 200px;
+	margin-left: 170px;
 }
 .layer {
-	min-height: 210px;
+	min-height: 160px;
 	float: left;
     position: relative;
 	padding: 5px;
-	width: 85%;
+	width: 80%;
 	background-color: #121212;
 	position: absolute;
 	line-height: 1.3;
@@ -329,12 +342,12 @@ li {
 }
 
 .read {
-  font-size: 30px;
+  font-size: 26px;
   color: #FFFFFF;
   text-align: right;
-  padding: 20px;
+  padding: 10px;
   float: right;
-  margin: 40px;
+  margin: 20px;
 }
 
 .community {
@@ -386,6 +399,60 @@ li {
   padding: 30px;
   font-size: 25px;
   min-height: 300px;
+  border: none;
+}
+
+.title {
+  display: inline-block;
+  background-color: #898989;
+  width: 40%;
+  margin: 25px;
+  position: relative;
+  color: #000000;
+  padding: 10px;
+  font-size: 25px;
+  height: 50px;
+  border: none;
+}
+
+
+.postbox {
+  display: inline-block;
+  background-color: #898989;
+  width: 95%;
+  margin: 25px;
+  position: relative;
+  color: #000000;
+  padding: 10px;
+  font-size: 25px;
+  min-height: 600px;
+  border: none;
+}
+
+
+.listtracks {
+  display: inline-block;
+  background-color: #898989;
+  width: 90%;
+  margin: 10px;
+  position: relative;
+  color: #000000;
+  padding: 10px;
+  font-size: 25px;
+  height: 400px;
+  border: none;
+}
+
+.postcontent {
+  display: inline-block;
+  background-color: #898989;
+  width: 80%;
+  margin: 10px;
+  position: relative;
+  color: #000000;
+  padding: 20px;
+  font-size: 25px;
+  min-height: 500px;
   border: none;
 }
 

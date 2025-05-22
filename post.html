@@ -1,0 +1,116 @@
+<DOCTYPE! html>
+<html>
+	<head>
+		<link rel="stylesheet" href="style.css">
+	</head>
+	<body>
+		<div class="topnav">
+			<img src="logo.png" style="height: 70px; float: left; margin-left: 10px;">
+			<a href="home.html">MusicKicks</a>
+			<a href="music.html">Music</a>
+			<a href="community.html" class="active">Community</a>
+			<a href="about.html">About</a> <a style="padding: 2px; font-size: 30px;"> | </a>
+			<input type="text" placeholder="Search.." class="searchbox"> 
+			<div class="dropdown">
+		    <a href="javascript:void(0)" style="float: right;">Account</a>
+				<div class="dropdown-content">
+					<a href="settings.html">Settings</a>
+					<a href="profile.html">Profile</a>
+					<a href="logout.html">Logout</a>
+				</div>
+			</div>
+		</div>
+
+		<div class="review">
+			<h1> Create a Post: </h1>
+			<div style="float: right; margin-right: 30px;">
+			<h2> Post Type: </h2>
+			<button class="tablink" style="width: 150px;" onclick="openPage('discussion', this, '#030303')" id="defaultOpen">Discussion</button>
+			<button class="tablink" style="width: 150px;" onclick="openPage('review', this, '#030303')">Review</button>
+			</div>
+
+			<div id="discussion" class="tabcontent" style="padding: 30px;"> <!--NEW-->
+				<h2 style="display: inline-block; vertical-align: top;"> Discussion Title: </h2>
+				<textarea class="title"> </textarea> <br>
+				<textarea class="postbox" placeholder="I think..."> </textarea>
+				<a href="community.html">
+				<button style="padding: 15px; background-color: #252525; color: white; float: right; font-size: 20px;">Create Post </button> </a>
+			</div>
+
+
+			<div id="review" class="tabcontent" style="padding: 30px;"> <!--NEW-->
+				<div class="tracks">
+				<p style="float: left; margin-left: 20px;"> Tracklist: </p>
+					<textarea class="listtracks"> </textarea>
+				</div>
+				<h2 style="display: inline-block; vertical-align: top;"> Album Title: </h2>
+				<textarea class="title"> </textarea> <br>
+				<h2 style="display: inline-block; vertical-align: top;"> Album Artist: </h2>
+				<textarea class="title"> </textarea>
+				<h2 style="display: inline-block; vertical-align: top;"> Album Date: </h2>
+				<textarea class="title"> </textarea>
+				<h2> Album Cover:
+					<button style="width: 100px; height: 34px; float: right; margin-left: 20px; background-color: #454545; color: white;">Apply</button>
+					<input type="file"  class="logininput" style="float: right; margin-left: 20px;">
+				</h2>
+				<h2> Album Genres:
+					<select style="float: right; margin-left: 20px; width: 200px; height: 148px; font-size: 20px;" multiple>
+					<option>Pop</option>
+					<option>Rock</option>
+					<option>Hip-Hop</option>
+					<option>Soul</option>
+					<option>Jazz</option>
+					<option>Electronic</option>
+					<option>Folk</option>
+					<option>R&B</option>
+					<option>Alternative</option>
+					</select>
+					<br> (Hold ctrl to select multiple) <br> <br>
+				</h2>
+				<textarea class="postbox" placeholder="I think..."> </textarea> <br>
+				<a href="community.html">
+				<button style="padding: 15px; background-color: #252525; color: white; float: right; font-size: 20px;">Create Post </button> </a>
+
+			</div>
+		</div>
+
+
+
+
+
+			<div class="footer" style="position: relative;">
+				<h3> ©2025 My Website. All rights reserved. </h3> &nbsp &nbsp
+				<img src="twitter.png" style="height: 70px; display: inline-block; margin-right: 20px;">
+				<a href="https://www.facebook.com/profile.php?id=61574711425822"> <img src="facebook.png" style="height: 70px; display: inline-block; margin-right: 20px;"> </a>
+				<a href="https://www.instagram.com/musickickss/"> <img src="instagram.png" style="height: 70px; display: inline-block; margin-right: 20px;"> <br> <br> </a>
+				<a href="home.html" style="text-decoration: none; color: #FFFFFF;">MusicKicks</a> &nbsp
+				<a href="music.html" style="text-decoration: none; color: #FFFFFF;">Music</a> &nbsp
+				<a href="community.html" style="text-decoration: none; color: #FFFFFF;">Community</a> &nbsp
+				<a href="about.html" style="text-decoration: none; color: #FFFFFF;">About</a>
+			</div>
+		</body>
+		<script>
+			function likeCount(){
+				var count = document.getElementById("count");
+				count.innerHTML = "6";
+				var like = document.getElementById("like");
+				like.src="liked.png";
+			}
+
+			function openPage(pageName,elmnt,color) {
+				var i, tabcontent, tablinks;
+				tabcontent = document.getElementsByClassName("tabcontent");
+				for (i = 0; i < tabcontent.length; i++) {
+					tabcontent[i].style.display = "none";
+				}
+				tablinks = document.getElementsByClassName("tablink");
+				for (i = 0; i < tablinks.length; i++) {
+					tablinks[i].style.backgroundColor = "";
+				}
+				document.getElementById(pageName).style.display = "block";
+				elmnt.style.backgroundColor = color;
+			}
+			document.getElementById("defaultOpen").click();
+		</script>
+		
+</html>
